@@ -1,42 +1,41 @@
-# See http://help.github.com/ignore-files/ for more about ignoring files.
+**/vite.config.{js,ts,mjs,mts,cjs,cts}.timestamp*
 
-# compiled output
-dist
-tmp
-/out-tsc
-
-# dependencies
+# Next.js
+.next
+out
 node_modules
 
-# IDEs and editors
 /.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+/.next
+/.vscode
+/dist
+/node_modules
+/**/node_modules
+/storybook-static
+/reports
+/.cache
+/.nx-helpers
+/build
+/migration-storybook.log
+/yarn-error.log
+/storybook.log
+/test-results/
+/public/
 
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
-.DS_Store
-Thumbs.db
+!./public/images
+!./public/locales
+!./public/offlinePage
+!./public/sw
+!/**/.gitkeep
+certificates
+/playwright-report/
+/blob-report/
+/playwright/.cache/
 
 .nx/cache
 .nx/workspace-data
+
+# Next.js
+.next
+out
+
