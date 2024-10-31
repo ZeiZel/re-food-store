@@ -1,20 +1,13 @@
-'use client';
-
-import styled from 'styled-components';
-
-const StyledPage = styled.div`
-  .page {
-  }
-`;
+import styles from './page.module.scss';
 
 export default function Index() {
   /*
    * Replace the elements below with your own.
    *
-   * Note: The corresponding styles are in the ./index.styled-components file.
+   * Note: The corresponding styles are in the ./index.scss file.
    */
   return (
-    <StyledPage>
+    <div className={styles.page}>
       <div className="wrapper">
         <div className="container">
           <div id="welcome">
@@ -97,7 +90,7 @@ export default function Index() {
                 </svg>
               </a>
               <a
-                href="https://blog.nrwl.io/?utm_source=nx-project"
+                href="https://nx.dev/blog/?utm_source=nx-project"
                 target="_blank"
                 rel="noreferrer"
                 className="list-item-link"
@@ -471,6 +464,6 @@ export default function Index() {
           </p>
         </div>
       </div>
-    </StyledPage>
+    </div>
   );
 }

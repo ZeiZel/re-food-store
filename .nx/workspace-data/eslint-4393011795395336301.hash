@@ -1,0 +1,824 @@
+{
+  "13428155941701332097": {},
+  "1874052849487796860": {
+    "libs/types": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/types"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "11933576327556958217": {
+    "apps/dashboard-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/dashboard-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "2946757483806277186": {},
+  "11630674298559241564": {},
+  "3029064082401937024": {},
+  "612697892643665859": {},
+  "2110484131800167777": {},
+  "7459042265754429814": {},
+  "11611892392493221217": {},
+  "7651479594029921717": {},
+  "15665835815913032838": {},
+  "7782596175036077351": {},
+  "17236066302717135993": {},
+  "4138376650797733747": {},
+  "846707402358998179": {},
+  "8071139708367427117": {},
+  "16133028179311109744": {},
+  "11815888098631281915": {},
+  "12422107120338732157": {},
+  "12682382442964176024": {},
+  "5390346831635351662": {},
+  "429704309151789301": {},
+  "35053380539128103": {},
+  "9766082362954306214": {},
+  "4677130542305986088": {},
+  "9453532006361143711": {},
+  "1761789774706519049": {},
+  "13116688062769332859": {},
+  "15259806084229536323": {},
+  "11989663907045995305": {},
+  "11481565980953629411": {},
+  "10397138603311812126": {},
+  "161867909006507514": {},
+  "5471739447312827886": {},
+  "6455428405317105536": {},
+  "2129931119468823199": {},
+  "1727835683287367835": {},
+  "227778214581523138": {},
+  "14285303826323137468": {},
+  "7619612633257179442": {},
+  "11544843180278806996": {},
+  "12519941288807623452": {},
+  "10520129348388883376": {},
+  "7983711320245072767": {},
+  "15502849773064599240": {},
+  "6203643133549785624": {},
+  "18213704588294069872": {},
+  "3850611151106181601": {},
+  "3695583454658158606": {},
+  "4507686907073999276": {},
+  "7289992169560132623": {},
+  "7251135150006158571": {},
+  "37713123270385069": {},
+  "1347076686229533349": {},
+  "6704066018212840095": {},
+  "4244224573332961229": {},
+  "11243798860484824350": {},
+  "17701681019480031553": {},
+  "17271338379649713311": {},
+  "7737477494223022290": {},
+  "8933022352037347270": {},
+  "17889228727631253705": {},
+  "4896750356393481087": {},
+  "12623114037823608071": {},
+  "10017017912622451402": {},
+  "2857747689211066619": {},
+  "17735386366371329130": {},
+  "15401199652452694252": {},
+  "7867870038242794657": {},
+  "15754727339459228624": {},
+  "16182859649682075367": {},
+  "11420673114256781809": {},
+  "11783492609501665804": {},
+  "12825525233738819914": {},
+  "14490141965309952885": {},
+  "464891576759933201": {},
+  "2998227888955579198": {},
+  "107641107306929487": {},
+  "5113921214976325086": {},
+  "17822661383762425239": {},
+  "17387616066761391800": {},
+  "7763543945378117725": {},
+  "8892214891366094090": {},
+  "9671354023291332733": {},
+  "10001975527170735907": {},
+  "471066375979473487": {},
+  "4471151702416390656": {},
+  "15294190526603892361": {},
+  "5982459894688482671": {},
+  "3835354914001698475": {},
+  "13576842511030696616": {},
+  "16308772081633535027": {},
+  "10950685641711189267": {},
+  "14551377069055556195": {},
+  "3329666490209659336": {},
+  "3870525792463868358": {},
+  "18012648481416386196": {},
+  "14222599602936720437": {},
+  "10112141240256430443": {},
+  "8064631767087248924": {},
+  "16930243449391960647": {},
+  "4663584996560999247": {},
+  "13000242531479620633": {},
+  "17281614635531213816": {},
+  "12918615407827782140": {
+    "apps/dashboard": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/dashboard"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "1877534243928843257": {},
+  "15804368293117625454": {},
+  "18291726323135168711": {},
+  "6990816150451464802": {},
+  "11648388125888596569": {},
+  "17834676099985831021": {},
+  "14454585816006987522": {},
+  "16026655633902445070": {},
+  "4137231823179829797": {},
+  "14416660807058856039": {},
+  "18400417062782489651": {},
+  "11620930503623851878": {},
+  "5132116252882409466": {},
+  "2792991889570730359": {},
+  "9672227400690858357": {},
+  "16007067971585442980": {},
+  "7178129559549895230": {},
+  "598276261145016219": {
+    "apps/mobile": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/mobile"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "8284605505587723223": {},
+  "5732028334864111753": {},
+  "5648421575100764556": {},
+  "12204407485846549073": {},
+  "1722403762207595605": {},
+  "5012538688236544973": {},
+  "646440848177315806": {
+    "apps/dashboard": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/dashboard"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "17214637733398295487": {},
+  "16113890037480977399": {},
+  "224751282409915526": {},
+  "4339583541403579858": {},
+  "7742622793629523762": {},
+  "1751897808272181776": {},
+  "14570775042638229958": {},
+  "1597302223196331960": {},
+  "13373271056074972419": {},
+  "12051059965814764571": {},
+  "4201622503919022956": {},
+  "15511581926505147795": {},
+  "5789371141251868971": {},
+  "10704218776078276416": {},
+  "3483985128719260349": {},
+  "16956417318631648665": {},
+  "10878021772551944319": {},
+  "4309407880878634138": {},
+  "997385004792037421": {},
+  "16321208260080447096": {},
+  "17616575246368906110": {},
+  "16059756376082833821": {},
+  "14472514182977975088": {},
+  "12601976811382720105": {},
+  "8520581305132244061": {},
+  "9506104180703535221": {},
+  "11615822155316263861": {},
+  "11343831567585048780": {},
+  "1168351728236157496": {},
+  "9930401584846056421": {},
+  "12574605425350803770": {},
+  "88193856906946739": {},
+  "2999863036585585360": {},
+  "16789029664905685994": {},
+  "175736256735529536": {},
+  "11969526097789448585": {},
+  "7455172053048622827": {},
+  "15281579034422601596": {},
+  "1398365742863775007": {
+    "packages/ui": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "packages/ui"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "17417635282159314646": {},
+  "203990935851155959": {},
+  "9771120427560060561": {
+    "libs/interfaces": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "libs/interfaces"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "pnpm exec eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "3610867785851611528": {},
+  "14435334078199231149": {},
+  "18141402214686215193": {},
+  "1792290729535577384": {},
+  "5720850012381188726": {},
+  "1608719679196781628": {},
+  "10410160256553368224": {},
+  "13257291522898392863": {},
+  "9630933293929485603": {},
+  "15920070605036084031": {},
+  "13479759576137719666": {},
+  "1999096607365014424": {},
+  "11594542087709618839": {},
+  "2103381213729112575": {},
+  "12055054393559380977": {},
+  "15279942281896368765": {},
+  "15046986022107350901": {},
+  "18119196111138866385": {},
+  "2345618813044712714": {},
+  "7296038554872275279": {
+    "apps/chat-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/chat-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "899305868919784229": {
+    "apps/chat": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/chat"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "2482964384393149562": {},
+  "9681018277826642078": {
+    "apps/auth": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/auth"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "712279602385605461": {
+    "apps/auth-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/auth-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "8794379592712043308": {},
+  "1766784449292206595": {
+    "apps/chat-service": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/chat-service"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "15127220510254424993": {
+    "apps/chat-service-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/chat-service-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "8833455295575806034": {},
+  "9845829978376124506": {
+    "apps/market-service": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/market-service"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "9962160790215977930": {
+    "apps/market-service-e2e": {
+      "targets": {
+        "lint": {
+          "command": "eslint .",
+          "cache": true,
+          "options": {
+            "cwd": "apps/market-service-e2e"
+          },
+          "inputs": [
+            "default",
+            "^default",
+            "{workspaceRoot}/eslint.config.js",
+            "{projectRoot}/eslint.config.js",
+            "{workspaceRoot}/tools/eslint-rules/**/*",
+            {
+              "externalDependencies": [
+                "eslint"
+              ]
+            }
+          ],
+          "outputs": [
+            "{options.outputFile}"
+          ],
+          "metadata": {
+            "technologies": [
+              "eslint"
+            ],
+            "description": "Runs ESLint on project",
+            "help": {
+              "command": "bun eslint --help",
+              "example": {
+                "options": {
+                  "max-warnings": 0
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "4608196786937228723": {},
+  "15145188562496475285": {},
+  "4711031686254657139": {},
+  "13928737836753740126": {},
+  "714516663198390975": {}
+}

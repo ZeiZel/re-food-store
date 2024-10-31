@@ -1,0 +1,32 @@
+services:
+  dashboard:
+    image: node:20-alpine3
+    container_name: dashboard-client
+    network_mode: host
+    depends_on:
+      - caddy
+    ports:
+      - $DASHBOARD_LOCAL_PORT:$DASHBOARD_DOCKER_PORT
+    volumes:
+      - '.:/app'
+    working_dir: /app
+    build:
+      context: .
+      target: frontend-base
+      dockerfile: apps/dashboard/Dockerfile
+    environment:
+      NODE_ENV: development
+    command: sh -c "cd /app; nx dev dashboard"
+
+  caddy:
+    image: caddy:latest
+    restart: unless-stopped
+    network_mode: host
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile
+      - caddy_data:/data
+      - caddy_config:/config
+
+volumes:
+  caddy_data:
+  caddy_config:

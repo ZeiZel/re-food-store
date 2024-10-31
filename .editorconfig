@@ -1,18 +1,11 @@
 root = true
 
-[*]
-charset = utf-8
+[{js,jsx,ts,tsx,scss,css}]
+charset = utf-8 
 end_of_line = lf
-insert_final_newline = true
-max_line_length = 100
+indent_size = tab 
 indent_style = tab
 tab_width = 4
-
-[*.{json,md,yaml,yml}]
-indent_style = space
-tab_width = 2
-
-[*.md]
-trim_trailing_whitespace = false
-indent_style = tab
-max_line_length = off
+insert_final_newline = true 
+max_line_length = 120 
+trim_trailing_whitespace = true 

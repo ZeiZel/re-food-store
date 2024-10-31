@@ -1,0 +1,11 @@
+.git
+.idea
+.code
+**/.next
+dist
+node_modules
+**/node_modules
+
+*.log
+.DS_Store
+*.tmp

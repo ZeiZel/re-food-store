@@ -1,8 +1,7 @@
 {
-	"recommendations": [
-		"nrwl.angular-console",
-		"esbenp.prettier-vscode",
-		"firsttris.vscode-jest-runner",
-		"ms-playwright.playwright"
-	]
+  "recommendations": [
+    "ms-playwright.playwright",
+    "esbenp.prettier-vscode",
+    "firsttris.vscode-jest-runner"
+  ]
 }
