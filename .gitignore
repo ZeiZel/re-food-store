@@ -1,12 +1,11 @@
 **/vite.config.{js,ts,mjs,mts,cjs,cts}.timestamp*
 
-# Next.js
-.next
 out
 node_modules
 
 /.idea
 /.next
+/**/.next
 /.vscode
 /dist
 /node_modules
@@ -14,6 +13,7 @@ node_modules
 /storybook-static
 /reports
 /.cache
+/.nx
 /.nx-helpers
 /build
 /migration-storybook.log
@@ -32,10 +32,4 @@ certificates
 /blob-report/
 /playwright/.cache/
 
-.nx/cache
-.nx/workspace-data
-
-# Next.js
-.next
-out
 

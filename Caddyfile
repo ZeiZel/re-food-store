@@ -2,14 +2,6 @@
   reverse_proxy localhost:3002
 }
 
-rekit.localhost {
+dashboard.localhost {
 	reverse_proxy localhost:3000
-}
-
-api-service.localhost {
-	reverse_proxy localhost:8000
-}
-
-server.localhost {
-	reverse_proxy localhost:3001
 }
