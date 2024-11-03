@@ -1,0 +1,16 @@
+export enum ETagType {
+	LABEL = 'label',
+	DIV = 'div',
+	CODE = 'code',
+	ASIDE = 'aside',
+	FORM = 'form',
+	FOOTER = 'footer',
+	HEADER = 'header',
+	SPAN = 'span',
+	SECTION = 'section',
+	MAIN = 'main',
+	LI = 'li',
+	UL = 'ul',
+	NAV = 'nav',
+	BUTTON = 'button',
+}

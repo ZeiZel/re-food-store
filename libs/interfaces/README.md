@@ -1,3 +1,3 @@
-# interfaces
+# Interfaces
 
-This library was generated with [Nx](https://nx.dev).
+Project contracts / interfaces / common entities

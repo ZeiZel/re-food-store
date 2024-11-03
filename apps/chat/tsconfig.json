@@ -26,6 +26,6 @@
     "../../apps/chat/.next/types/**/*.ts",
     "../../dist/apps/chat/.next/types/**/*.ts",
     "next-env.d.ts"
-  ],
+, "eslint.config.mjs"  ],
   "exclude": ["node_modules", "jest.config.ts", "**/*.spec.ts", "**/*.test.ts"]
 }

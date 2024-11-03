@@ -1,14 +1,12 @@
+---
 services:
   dashboard:
     image: node:20-alpine3
     container_name: dashboard-client
     network_mode: host
-    depends_on:
-      - caddy
-    ports:
-      - $DASHBOARD_LOCAL_PORT:$DASHBOARD_DOCKER_PORT
-    volumes:
-      - '.:/app'
+    depends_on: [caddy]
+    ports: [$DASHBOARD_LOCAL_PORT:$DASHBOARD_DOCKER_PORT]
+    volumes: [.:/app]
     working_dir: /app
     build:
       context: .
@@ -17,7 +15,13 @@ services:
     environment:
       NODE_ENV: development
     command: sh -c "cd /app; nx dev dashboard"
-
+  postgres:
+    image: postgres:latest
+    ports: [$POSTGRES_LOCAL_PORT:$POSTGRES_DOCKER_PORT]
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=mypass
+      - POSTGRES_DB=mydb
   caddy:
     image: caddy:latest
     restart: unless-stopped
@@ -26,7 +30,6 @@ services:
       - ./Caddyfile:/etc/caddy/Caddyfile
       - caddy_data:/data
       - caddy_config:/config
-
 volumes:
   caddy_data:
   caddy_config:

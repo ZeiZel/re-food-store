@@ -13,5 +13,5 @@
     "src/**/*.spec.ts",
     "src/**/*.test.ts"
   ],
-  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx"]
+  "include": ["**/*.ts", "**/*.tsx", "**/*.js", "**/*.jsx", "eslint.config.mjs"]
 }

@@ -1,9 +1,79 @@
 {
-  "name": "dashboard",
-  "$schema": "../../node_modules/nx/schemas/project-schema.json",
-  "sourceRoot": "apps/dashboard",
-  "projectType": "application",
-  "tags": [],
-  "// targets": "to see all targets run: nx show project dashboard --web",
-  "targets": {}
+	"name": "dashboard",
+	"$schema": "../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/dashboard",
+	"projectType": "application",
+	"tags": [],
+	"// targets": "to see all targets run: nx show project dashboard --web",
+	"targets": {
+		"build": {
+			"executor": "@nx/next:build",
+			"outputs": ["{options.outputPath}"],
+			"defaultConfiguration": "production",
+			"options": {
+				"outputPath": "dist/apps/dashboard"
+			},
+			"configurations": {
+				"development": {
+					"outputPath": "apps/dashboard"
+				},
+				"production": {
+					"generateLockfile": true
+				}
+			}
+		},
+
+		"serve": {
+			"executor": "nx:run-commands",
+			"options": {
+				"commands": [
+					{
+						"command": "cd dist/apps/dashboard && pnpm run start",
+						"description": "Сборка приложения"
+					}
+				],
+				"parallel": true
+			}
+		},
+
+		"dev": {
+			"executor": "@nx/next:server",
+			"defaultConfiguration": "development",
+			"options": {
+				"buildTarget": "dashboard:build",
+				"dev": true
+			},
+			"configurations": {
+				"development": {
+					"buildTarget": "dashboard:build:development",
+					"dev": true,
+					"port": 3000
+				},
+				"production": {
+					"buildTarget": "dashboard:build:production",
+					"dev": false
+				}
+			}
+		},
+
+		"container": {
+			"executor": "@nx-tools/nx-container:build",
+			"defaultConfiguration": "local",
+			"options": {
+				"engine": "docker",
+				"context": ".",
+				"file": "apps/dashboard/Dockerfile"
+			},
+			"configurations": {
+				"local": {
+					"tags": ["dashboard:latest"],
+					"push": false
+				},
+				"production": {
+					"tags": ["cr.re-food.ru/dashboard:latest"],
+					"push": true
+				}
+			}
+		}
+	}
 }
