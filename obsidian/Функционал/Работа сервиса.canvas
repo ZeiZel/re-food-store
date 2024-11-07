@@ -1,0 +1,21 @@
+{
+	"nodes":[
+		{"id":"9418f79ba83cc7b1","x":-464,"y":-141,"width":524,"height":121,"type":"text","text":"Основной магазин с нашими партнёрами, у которых можно заказать доставку еды\n"},
+		{"id":"0d9769fa799588ce","x":-1040,"y":-460,"width":248,"height":119,"type":"text","text":"Админ-дашборд"},
+		{"id":"c359b0694f26b02c","x":-1044,"y":-164,"width":324,"height":104,"type":"text","text":"Урезанный дашборд для сотрудника поддержки\n"},
+		{"id":"4b25d3d75d34d88b","x":-1491,"y":-29,"width":251,"height":129,"type":"text","text":"Сервис поддержки клиентов"},
+		{"id":"33f17715fc3c086b","x":-1240,"y":340,"width":241,"height":120,"type":"text","text":"Чат с магазином и поддержкой"},
+		{"id":"8f053ca6c29a20b7","x":300,"y":140,"width":485,"height":348,"type":"text","text":"После перехода в магазин, открывается отдельный магазин для заказа товара (потому как магазин - это самостоятельная единица)."},
+		{"id":"4786a8faa68dfe6b","x":-700,"y":488,"width":414,"height":225,"type":"text","text":"Интернет-магазин, в котором клиент может заказать товар"}
+	],
+	"edges":[
+		{"id":"fdc722172ff9a290","fromNode":"9418f79ba83cc7b1","fromSide":"right","toNode":"8f053ca6c29a20b7","toSide":"top"},
+		{"id":"9a480a7289c17a90","fromNode":"0d9769fa799588ce","fromSide":"bottom","toNode":"c359b0694f26b02c","toSide":"top"},
+		{"id":"cf9e7afff0a25c1e","fromNode":"c359b0694f26b02c","fromSide":"left","toNode":"4b25d3d75d34d88b","toSide":"right"},
+		{"id":"9a988ca3bac3d021","fromNode":"4b25d3d75d34d88b","fromSide":"bottom","toNode":"33f17715fc3c086b","toSide":"top"},
+		{"id":"0ad076a690cfdc27","fromNode":"33f17715fc3c086b","fromSide":"right","toNode":"4786a8faa68dfe6b","toSide":"left","fromEnd":"arrow"},
+		{"id":"0f4ffad7ec5dc797","fromNode":"0d9769fa799588ce","fromSide":"right","toNode":"9418f79ba83cc7b1","toSide":"top"},
+		{"id":"fb8d4b3ada7dd71c","fromNode":"4786a8faa68dfe6b","fromSide":"right","toNode":"9418f79ba83cc7b1","toSide":"bottom","fromEnd":"arrow"},
+		{"id":"1f8098c8ebdef37d","fromNode":"4786a8faa68dfe6b","fromSide":"right","toNode":"8f053ca6c29a20b7","toSide":"bottom"}
+	]
+}
