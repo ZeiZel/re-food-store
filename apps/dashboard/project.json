@@ -4,11 +4,12 @@
 	"sourceRoot": "apps/dashboard",
 	"projectType": "application",
 	"tags": [],
-	"// targets": "to see all targets run: nx show project dashboard --web",
 	"targets": {
 		"build": {
 			"executor": "@nx/next:build",
-			"outputs": ["{options.outputPath}"],
+			"outputs": [
+				"{options.outputPath}"
+			],
 			"defaultConfiguration": "production",
 			"options": {
 				"outputPath": "dist/apps/dashboard"
@@ -22,7 +23,6 @@
 				}
 			}
 		},
-
 		"serve": {
 			"executor": "nx:run-commands",
 			"options": {
@@ -35,7 +35,6 @@
 				"parallel": true
 			}
 		},
-
 		"dev": {
 			"executor": "@nx/next:server",
 			"defaultConfiguration": "development",
@@ -55,7 +54,6 @@
 				}
 			}
 		},
-
 		"container": {
 			"executor": "@nx-tools/nx-container:build",
 			"defaultConfiguration": "local",
@@ -66,11 +64,15 @@
 			},
 			"configurations": {
 				"local": {
-					"tags": ["dashboard:latest"],
+					"tags": [
+						"dashboard:latest"
+					],
 					"push": false
 				},
 				"production": {
-					"tags": ["cr.re-food.ru/dashboard:latest"],
+					"tags": [
+						"cr.re-food.ru/dashboard:latest"
+					],
 					"push": true
 				}
 			}
