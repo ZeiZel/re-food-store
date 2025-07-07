@@ -1,0 +1,27 @@
+{
+    admin on
+    auto_https disable_redirects
+    debug
+    log {
+        output stdout
+        level ERROR
+        format console
+    }
+}
+
+(reverse_proxy_service) {
+    reverse_proxy {args.0}:{args.1} {
+        header_up Host {host}
+        header_up X-Real-IP {remote}
+        header_up X-Forwarded-For {remote}
+        header_up X-Forwarded-Proto {scheme}
+    }
+}
+
+dashboard.localhost {
+    import reverse_proxy_service dashboard 3000
+}
+
+landing.localhost {
+    import reverse_proxy_service landing 3000
+}

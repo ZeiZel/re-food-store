@@ -1,42 +1,29 @@
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "rootDir": ".",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "target": "es2015",
-    "module": "esnext",
-    "lib": [
-      "es2020",
-      "dom"
-    ],
-    "skipLibCheck": true,
-    "skipDefaultLibCheck": true,
-    "baseUrl": ".",
-    "paths": {
-      "@/interfaces": [
-        "libs/interfaces/src/*"
-      ],
-      "@/types": [
-        "libs/types/src/index.ts"
-      ],
-      "@re/ui": [
-        "packages/ui/src/index.ts"
-      ],
-      "@re/ui/*": [
-        "packages/ui/src/*"
-      ],
-      "icons": [
-        "libs/icons/src/index.ts"
-      ]
-    }
-  },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+	"compileOnSave": false,
+	"compilerOptions": {
+		"composite": true,
+		"rootDir": ".",
+		"baseUrl": ".",
+		"strict": true,
+		"sourceMap": true,
+		"declaration": false,
+		"skipLibCheck": true,
+		"importHelpers": true,
+		"esModuleInterop": true,
+		"skipDefaultLibCheck": true,
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"jsx": "preserve",
+		"target": "ES2015",
+		"module": "ESNext",
+		"moduleResolution": "Bundler",
+		"lib": ["es2020", "ESNext", "dom"],
+		"types": ["jest", "node", "@testing-library/jest-dom"],
+		"paths": {
+			"@re/tools": ["packages/re-tools/src/index.ts"],
+			"@re/ui": ["packages/re-ui/src/index.ts"],
+			"@re/ui/server": ["packages/re-ui/src/server.ts"]
+		}
+	},
+	"exclude": ["node_modules", "tmp"]
 }

@@ -59,7 +59,17 @@
 				"apps/auth-e2e/**/*",
 				"apps/chat-service-e2e/**/*",
 				"apps/market-service-e2e/**/*",
-				"apps/api-e2e/**/*"
+				"apps/api-e2e/**/*",
+				"apps/backend/auth-e2e/**/*",
+				"apps/backend/user-e2e/**/*",
+				"apps/backend/shopping-cart-e2e/**/*",
+				"apps/backend/search-e2e/**/*",
+				"apps/backend/product-catalog-e2e/**/*",
+				"apps/backend/notifications-e2e/**/*",
+				"apps/backend/recommendations-e2e/**/*",
+				"apps/backend/reviews-e2e/**/*",
+				"apps/backend/orders-e2e/**/*",
+				"apps/backend/products-e2e/**/*"
 			]
 		},
 		{
@@ -80,6 +90,17 @@
 				"serveTargetName": "serve",
 				"previewTargetName": "preview"
 			}
+		},
+		{
+			"plugin": "@nx/react/router-plugin",
+			"options": {
+				"buildTargetName": "build",
+				"devTargetName": "dev",
+				"startTargetName": "start",
+				"watchDepsTargetName": "watch-deps",
+				"buildDepsTargetName": "build-deps",
+				"typecheckTargetName": "typecheck"
+			}
 		}
 	],
 	"targetDefaults": {
@@ -87,6 +108,11 @@
 			"dependsOn": ["^build"]
 		},
 		"@nx/esbuild:esbuild": {
+			"cache": true,
+			"dependsOn": ["^build"],
+			"inputs": ["default", "^default"]
+		},
+		"@nx/js:tsc": {
 			"cache": true,
 			"dependsOn": ["^build"],
 			"inputs": ["default", "^default"]
@@ -103,6 +129,11 @@
 			"library": {
 				"unitTestRunner": "vitest"
 			}
+		}
+	},
+	"release": {
+		"version": {
+			"preVersionCommand": "bunx nx run-many -t build"
 		}
 	}
 }

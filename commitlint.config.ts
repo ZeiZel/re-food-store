@@ -1,25 +1,22 @@
-import { RuleConfigSeverity, UserConfig } from '@commitlint/types';
-
-const helpUrl = 'https://www.conventionalcommits.org/en/';
+import { RuleConfigSeverity, type UserConfig } from '@commitlint/types';
 
 const TYPE_MAX_LENGTH = 10;
 const SCOPE_MAX_LENGTH = 15;
 const SUBJECT_MAX_LENGTH = 50;
-const HEADER_MAX_LENGTH =
-  SUBJECT_MAX_LENGTH + SCOPE_MAX_LENGTH + TYPE_MAX_LENGTH;
+const HEADER_MAX_LENGTH = SUBJECT_MAX_LENGTH + SCOPE_MAX_LENGTH + TYPE_MAX_LENGTH;
 const BODY_MAX_LENGTH = 150;
 const FOOTER_MAX_LENGTH = 100;
 
 const prompt: UserConfig['prompt'] = {
   messages: {
-    emptyWarning: 'Нельзя отправить пустое сообщение коммита.',
-    lowerLimitWarning: 'Сообщение не достигает минимальной длины.',
-    upperLimitWarning: 'Сообщение длиннее максимальной длины.',
+    emptyWarning: 'Cannot send empty string!',
+    lowerLimitWarning: 'Message is too short!',
+    upperLimitWarning: 'Messsage is too long!',
   },
   questions: {
     footer: {
       messages: {
-        whatIs: 'Футер должен содержать ссылку на задачу',
+        whatIs: 'Footer must contain link to task!',
       },
     },
   },
@@ -32,19 +29,7 @@ const typeConfig: UserConfig['rules'] = {
   'type-enum': [
     RuleConfigSeverity.Error,
     'always',
-    [
-      'build',
-      'chore',
-      'ci',
-      'docs',
-      'feat',
-      'fix',
-      'perf',
-      'refactor',
-      'revert',
-      'style',
-      'test',
-    ],
+    ['build', 'chore', 'ci', 'docs', 'feat', 'fix', 'perf', 'refactor', 'revert', 'style', 'test'],
   ],
 };
 
@@ -55,11 +40,7 @@ const scopeConfig: UserConfig['rules'] = {
 
 const subjectConfig: UserConfig['rules'] = {
   'subject-case': [RuleConfigSeverity.Error, 'always', 'lowercase'],
-  'subject-max-length': [
-    RuleConfigSeverity.Error,
-    'always',
-    SUBJECT_MAX_LENGTH,
-  ],
+  'subject-max-length': [RuleConfigSeverity.Error, 'always', SUBJECT_MAX_LENGTH],
 };
 
 const headerConfig: UserConfig['rules'] = {

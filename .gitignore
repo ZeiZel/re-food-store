@@ -1,19 +1,20 @@
-**/vite.config.{js,ts,mjs,mts,cjs,cts}.timestamp*
-
-out
-node_modules
-
 /.idea
 /.next
-/**/.next
+/standalone-next
 /.vscode
 /dist
 /node_modules
+/node_modules/*
+/node_modules/**/*
 /**/node_modules
+/playwright-report
+/**/playwright-report
+/**/playwright-report/*
+/**/playwright-report/**/*
+/**/storybook-static
 /storybook-static
 /reports
 /.cache
-/.nx
 /.nx-helpers
 /build
 /migration-storybook.log
@@ -21,6 +22,7 @@ node_modules
 /storybook.log
 /test-results/
 /public/
+/coverage
 
 !./public/images
 !./public/locales
@@ -32,3 +34,30 @@ certificates
 /blob-report/
 /playwright/.cache/
 
+.env
+.env.settings
+.nx/cache
+.nx/workspace-data
+**/.env.local
+/bun.lock
+/bun.lockb
+
+.next
+out
+
+# Expo
+node_modules/
+.expo/
+.yarn/
+dist/
+npm-debug.*
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+web-build/
+cache/
+vite.config.*.timestamp*
+vitest.config.*.timestamp*

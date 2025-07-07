@@ -1,0 +1,9 @@
+{
+	"name": "vendor-dashboard",
+	"$schema": "../../../node_modules/nx/schemas/project-schema.json",
+	"sourceRoot": "apps/frontend/vendor-dashboard",
+	"projectType": "application",
+	"tags": [],
+	"// targets": "to see all targets run: nx show project vendor-dashboard --web",
+	"targets": {}
+}
